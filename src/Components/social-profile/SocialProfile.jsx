@@ -1,8 +1,8 @@
 import user from './user.json'
 import PropTypes from "prop-types"
-import s from './SocialProfile.module.scss'
+// import s from './SocialProfile.module.scss'
 
-export default function SocialProfile({name, }) {
+export default function SocialProfile({name, tag, location, avatar, stats}) {
     return (
         <div class="profile">
             <div className="description">
