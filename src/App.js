@@ -5,7 +5,13 @@ import user from './Components/social-profile/user.json'
 function App() {
   return (
     <div className="App">
-      <SocialProfile user={user}/>
+      <SocialProfile 
+      name = {user.name}
+      tag = {user.tag}
+      location = {user.location}
+      avatar = {user.avatar}
+      stats = {user.stats}
+      />
     </div>
   );
 }
