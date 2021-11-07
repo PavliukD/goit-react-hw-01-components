@@ -9,7 +9,7 @@ import transactions from './transactions/transaction.json'
 
 function App() {
   return (
-    <div>
+    <div className = "App">
       <SocialProfile
       name = {user.name}
       tag={user.tag}

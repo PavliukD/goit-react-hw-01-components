@@ -12,30 +12,30 @@ export default function SocialProfile({
         likes: 0,
     }}) {
     return (
-        <div className="profile" key = {name}>
+        <div className={s.profile} key = {name}>
             <div className={s.description}>
                 <img
                 src={avatar}
                 alt="Аватар пользователя"
-                className="avatar"
+                className={s.avatar}
                 />
-                <p className="name">{name}</p>
-                <p className="tag">{tag}</p>
-                <p className="location">{location}</p>
+                <p className={s.name}>{name}</p>
+                <p className={s.tag}>{tag}</p>
+                <p className={s.location}>{location}</p>
             </div>
 
-            <ul className="stats">
-                <li>
-                <span className="label">Followers</span>
-                <span className="quantity">{stats.followers}</span>
+            <ul className={s.stats}>
+                <li className = {s.statItem}>
+                <span className={s.label}>Followers</span>
+                <span className={s.quantity}>{stats.followers}</span>
                 </li>
-                <li>
-                <span className="label">Views</span>
-                <span className="quantity">{stats.views}</span>
+                <li className = {s.statItem}>
+                <span className={s.label}>Views</span>
+                <span className={s.quantity}>{stats.views}</span>
                 </li>
-                <li>
-                <span className="label">Likes</span>
-                <span className="quantity">{stats.likes}</span>
+                <li className = {s.statItem}>
+                <span className={s.label}>Likes</span>
+                <span className={s.quantity}>{stats.likes}</span>
                 </li>
             </ul>
         </div>

@@ -1,0 +1,29 @@
+.transactionHistory {
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+  width: 640px;
+  border: 1px solid grey;
+  background-color: white;
+}
+
+.thead {
+  text-transform: uppercase;
+  background-color: blue;
+  color: white;
+}
+
+.thead th {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.trow td:not(:last-child) {
+  border-right: 1px solid grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.trow:nth-child(2n) {
+  background-color: lightgray;
+}
